@@ -10,7 +10,13 @@
               <div class="info-box-content">
                 <span class="info-box-text">Total Students</span>
                 <span class="info-box-number">
-                  <?php echo $conn->query("SELECT * FROM users where type = 3")->num_rows; ?>
+                  <?php 
+                  $psql = "SELECT COUNT(ID) as TT FROM student_list";
+                  $presult = $conn->query($psql);
+                  $prow = $presult->fetch_assoc();
+                  echo $prow['TT'];
+                  
+                  ?>
                 </span>
               </div>
               <!-- /.info-box-content -->
