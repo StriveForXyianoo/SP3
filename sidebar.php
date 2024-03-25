@@ -63,7 +63,7 @@
             <a href="#" class="nav-link nav-is-tree nav-add_department nav-department_list">
               <i class="nav-icon fa fa-users"></i>
               <p>
-                Suscriber
+                Subscribers
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
